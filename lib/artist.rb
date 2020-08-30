@@ -3,8 +3,10 @@ require 'pry'
 
 class Artist
   extend Memorable 
+  include Paramable
   attr_accessor :name
   attr_reader :songs
+  
 
   @@artists = []
 
